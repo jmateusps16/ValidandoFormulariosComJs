@@ -7,7 +7,7 @@ export default function ehUmCPF(campo) {
     if (cpfValido) {
         console.log(`CPF ${cpf} válido`);
     } else {
-        console.log(`CPF ${cpf} inválido`);
+        campo.setCustomValidity('Esse cpf não é válido');
     }
 };
 
